@@ -19,7 +19,7 @@
     <body>
         <div id="container">    
             <div id="title" class="slideIn">
-                <p>MARIÁN SEDLÁK</p>
+                <p onclick='goToDomov()'>MARIÁN SEDLÁK</p>
             </div>    
             <div id="menu">
                 <div id="menuDIV">
@@ -32,72 +32,85 @@
                 
                 <div id="contentGaleria" class="slideIn">
                     <div id="galeria">
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="1" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/1.jpg" alt="1">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="2" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/2.jpg" alt="2">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="3" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/3.jpg" alt="3">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="4" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/4.jpg" alt="4">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="5" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/5.jpg" alt="5">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="6" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/6.jpg" alt="6">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="7" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/7.jpg" alt="7">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="8" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/8.jpg" alt="8">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="9" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/9.jpg" alt="9">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="10" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/10.jpg" alt="10">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="11" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/11.jpg" alt="11">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="12" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/12.jpg" alt="12">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="13" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/13.jpg" alt="13">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="14" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/14.jpg" alt="14">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="15" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/15.jpg" alt="15">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="16" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/16.jpg" alt="16">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="17" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/17.jpg" alt="17">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="18" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/18.jpg" alt="18">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="19" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/19.jpg" alt="19">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="20" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/20.jpg" alt="20">
                         </div>
-                        <div class="imgContainer">
+                        <div class="imgContainer" id="21" onclick='ZoomInImage(this.id)'>
                         <img src="./photos/21.jpg" alt="21">
                         </div>
                     </div>
                 </div>
 
+            </div>
+
+            <div id="zoomIn">
+                <div id="zoomInBox">
+                    <img id="zoomInImg" src="./photos/1.jpg">
+                </div>
+                <div id="close" onclick='closeImage()'><span class="material-icons" style="font-size: 60px">close</span></div>
+                <div id="arrowsCenter">
+                    <div id="arrowsLeftRight">
+                        <div id="leftArrow"><span class="material-icons" style="font-size: 80px">chevron_left</span></div>
+                        <div id="rightArrow"><span class="material-icons" style="font-size: 80px">chevron_right</span></div>
+                    </div>
+                </div>
             </div>
 
         </div>

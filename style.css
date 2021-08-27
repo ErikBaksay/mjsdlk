@@ -28,6 +28,9 @@
     color:white;
     font-size: 2.8em;
     font-weight: 200;
+    user-select: none;
+    cursor: pointer;
+    
 }
 #content{
     grid-area: content;
@@ -57,6 +60,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
+    user-select: none;
 }
 #contentDomov{
     display: grid;
@@ -96,6 +101,8 @@
     flex-direction: column;
     text-align: start;
     font-weight: 200;
+    cursor: default;
+    user-select: none;
 }
 #contentDomovSubtitle{
     font-size: 0.2em;
@@ -119,6 +126,8 @@
     border: none;
     font-size: 2em;
     font-weight: 400;
+    cursor: pointer;
+    user-select: none;
 }
 .slideAway{
     animation: slideAway 0.5s ease-in forwards;
