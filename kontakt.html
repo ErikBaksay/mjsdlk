@@ -5,28 +5,35 @@
         <meta charset="UTF-8">
         <title>mjsdlk photo</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleKontakt.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;800&display=swap" rel="stylesheet">
+        <script src="scriptKontakt.js"></script>
     </head>
 
     <body>
         <div id="container">
-            <div id="title"><p>MARIÁN SEDLÁK</p></div>
+            <div id="title" class="slideIn">
+                <p>MARIÁN SEDLÁK</p>
+            </div>     
             <div id="menu">
                 <div id="menuDIV">
-                    <div id="menuDomov" onclick="location.href='index.html'">DOMOV</div>
-                    <div id="menuGaleria" onclick="location.href='galeria.html'">GALÉRIA</div>
-                    <div id="menuKontakt" onclick="location.href='kontakt.html'">KONTAKT</div>
+                    <div id="menuDomov" onclick='goToDomov()'>DOMOV</div>
+                    <div id="menuGaleria" onclick='goToGaleria()'>GALÉRIA</div>
+                    <div id="menuKontakt" onclick='goToKontakt()'>KONTAKT</div>
                 </div>
             </div>
             <div id="content">
                 
+                <div id="contentKontakt" class="slideIn">
+
+                </div>
+
             </div>
 
         </div>

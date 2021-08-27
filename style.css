@@ -26,7 +26,8 @@
     flex-direction: column;
     text-align: center;
     color:white;
-    font-size: 3em;
+    font-size: 2.8em;
+    font-weight: 200;
 }
 #content{
     grid-area: content;
@@ -67,9 +68,6 @@
                         "space3 image title space2"
                         "space3 image arrow space2"
                         "space3 space5 space5 space2";
-    /*width: 90%;
-    height: 90%;
-    position: relative;*/
 }
 #image{
     grid-area: image;
@@ -89,7 +87,7 @@
     top: 10%;
     position: relative;
 }
-#contentTitle{
+#contentDomovTitle{
     grid-area: title;
     font-size: 6em;
     color:white;
@@ -99,7 +97,7 @@
     text-align: start;
     font-weight: 200;
 }
-#contentSubtitle{
+#contentDomovSubtitle{
     font-size: 0.2em;
     color:rgb(120, 120, 120);
     font-weight: 800;
@@ -121,4 +119,27 @@
     border: none;
     font-size: 2em;
     font-weight: 400;
+}
+.slideAway{
+    animation: slideAway 0.5s ease-in forwards;
+}
+.slideIn{
+    animation: slideIn 0.5s ease-in forwards;
+}
+
+@keyframes slideAway{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes slideIn{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }

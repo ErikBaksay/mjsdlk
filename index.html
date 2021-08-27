@@ -12,33 +12,36 @@
         <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;800&display=swap" rel="stylesheet">
+        <script src="scriptDomov.js"></script>
     </head>
 
     <body>
         <div id="container">    
             <div id="menu">
                 <div id="menuDIV">
-                    <div id="menuDomov" onclick="location.href='index.html'">DOMOV</div>
-                    <div id="menuGaleria" onclick="location.href='galeria.html'">GALÉRIA</div>
-                    <div id="menuKontakt" onclick="location.href='kontakt.html'">KONTAKT</div>
+                    <div id="menuDomov" onclick='goToDomov()'>DOMOV</div>
+                    <div id="menuGaleria" onclick='goToGaleria()'>GALÉRIA</div>
+                    <div id="menuKontakt" onclick='goToKontakt()'>KONTAKT</div>
                 </div>
             </div>
             <div id="content">
-                <div id="contentDomov">
+                
+                <div id="contentDomov" class="slideIn">
                     <div id="image">
                         <div id="imgFrame">
                             <img src="./photos/42fc32_31ae6b88974f4766aadf8010ad050ebd_mv2.jpeg" alt="Marián Sedlák">
                         </div>
                     </div>
-                    <div id="contentTitle">
+                    <div id="contentDomovTitle">
                         <p>MARIÁN</p>
                         <p>SEDLÁK</p>
-                        <p id="contentSubtitle">FOTOGRAFIA A VIDEOTVORBA</p>
+                        <p id="contentDomovSubtitle">FOTOGRAFIA A VIDEOTVORBA</p>
                     </div>
                     <div id="arrow">
                         <button onclick="location.href='galeria.html'">GALÉRIA	<span class="material-icons">arrow_forward_ios</span></button>
                     </div>
                 </div>
+
             </div>
 
         </div>
