@@ -4,10 +4,10 @@
     width: 100%;
     grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
     grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
-    grid-template-areas:"space3 space4 space4 space2"
+    grid-template-areas:"space3 galeria galeria space2"
                         "space3 galeria galeria space2"
                         "space3 galeria galeria space2"
-                        "space3 space5 space5 space2";
+                        "space3 galeria galeria space2";
 }
 #galeria{
     grid-area: galeria;
@@ -100,5 +100,17 @@
     100%{
         transform: scale(102%);
         opacity: 0.8;
+    }
+}
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 440px){
+    .imgContainer{
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        width: 80vw;
+        padding: 1%;
     }
 }
