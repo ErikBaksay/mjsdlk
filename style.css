@@ -107,6 +107,9 @@ html,body{
     cursor: default;
     user-select: none;
 }
+#contentDomovTitle p{
+    overflow:hidden;
+}
 #contentDomovSubtitle{
     font-size: 0.2em;
     color:rgb(120, 120, 120);
@@ -201,9 +204,6 @@ html,body{
         text-align: start;
         margin-left: 5vw;
     }
-    #contentDomovTitle p{
-        overflow:hidden;
-    }
     #arrow{
         margin-left: 5vw;
         font-size: 0.5em;
@@ -246,5 +246,16 @@ html,body{
     }
     #arrowIcon{
         font-size: 0.7em;
+    }
+    #contentDomov{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+        grid-template-areas:"space3 space4 space4 space2"
+                            "space3 image title space2"
+                            "space3 image arrow space2"
+                            "space3 space5 space5 space2";
     }
 }
