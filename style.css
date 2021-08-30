@@ -228,3 +228,23 @@ html,body{
     }
     
 }
+@media only screen and (max-height: 550px){
+    #container{
+        grid-template-rows: 0.12fr 1fr 0.16fr;
+        grid-template-areas: "title"
+                             "content"
+                             "menu";
+    }
+    #contentDomovTitle{
+        font-size: 3.5em;
+    }
+    #arrow{
+        font-size: 0.5em;
+    }
+    #arrow button{
+        padding: 1px 4px 1px 4px;
+    }
+    #arrowIcon{
+        font-size: 0.7em;
+    }
+}

@@ -103,7 +103,10 @@
     }
 }
 @media only screen and (max-width: 1200px){
-
+    #zoomIn img{
+        width: 60vw;
+        height: fit-content;
+    }
 }
 @media only screen and (max-width: 440px){
     .imgContainer{
@@ -113,4 +116,10 @@
         width: 80vw;
         padding: 1%;
     }
+    #zoomIn img{
+        width: 60vw;
+        height: fit-content;
+    }
+}
+@media only screen and (max-height: 550px){
 }
