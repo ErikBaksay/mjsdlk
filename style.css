@@ -89,7 +89,7 @@ html,body{
 #imgFrame{
     height: fit-content;
     width: fit-content;
-    border-radius: 10px;
+    border-radius: 7px;
     display: flex;
     left: 5%;
     top: 10%;
@@ -197,9 +197,12 @@ html,body{
         top: auto;
     }
     #contentDomovTitle{
-        font-size: 3.2em;
+        font-size: 3.5em;
         text-align: start;
         margin-left: 5vw;
+    }
+    #contentDomovTitle p{
+        overflow:hidden;
     }
     #arrow{
         margin-left: 5vw;
