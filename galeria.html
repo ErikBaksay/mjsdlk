@@ -102,15 +102,16 @@
 
             <div id="zoomIn">
                 <div id="zoomInBox">
-                    <img id="zoomInImg" src="./photos/1.jpg">
+                    <div id="leftArrow" onclick='previousImage()'><span class="material-icons" style="font-size: 80px; color:white">chevron_left</span></div>
+                    <img id="zoomInImg" data-imageID="1" src="./photos/1.jpg">
+                    <div id="rightArrow" onclick='nextImage()'><span class="material-icons" style="font-size: 80px; color:white">chevron_right</span></div>
                 </div>
                 <div id="close" onclick='closeImage()'><span class="material-icons" style="font-size: 60px">close</span></div>
-                <div id="arrowsCenter">
+                <!--<div id="arrowsCenter">
                     <div id="arrowsLeftRight">
-                        <div id="leftArrow"><span class="material-icons" style="font-size: 80px">chevron_left</span></div>
-                        <div id="rightArrow"><span class="material-icons" style="font-size: 80px">chevron_right</span></div>
+                        
                     </div>
-                </div>
+                </div>-->
             </div>
 
         </div>

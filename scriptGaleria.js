@@ -39,8 +39,42 @@ function closeImage(){
 }
 function ZoomInImage(id){
     var ZoomInImg = document.getElementById("zoomInImg");
-    var ZoomIn = document.getElementById("zoomIn")
+    var ZoomIn = document.getElementById("zoomIn");
     
     ZoomInImg.src="./photos/"+id+".jpg";
-    ZoomIn.style.display="flex";    
+    ZoomIn.style.display="flex";
+    document.getElementById("zoomInImg").setAttribute("data-imageID",id); 
 }
+function previousImage(){
+    var ZoomInImg = document.getElementById("zoomInImg");
+    var ZoomInImgID = parseInt(document.getElementById("zoomInImg").getAttribute("data-imageID"));
+    
+    if (ZoomInImgID==1){
+        newZoomInImgID=21;
+    }else{
+        newZoomInImgID = ZoomInImgID-1;
+    }
+    document.getElementById("zoomInImg").setAttribute("data-imageID", newZoomInImgID); 
+    ZoomInImg.src="./photos/"+(newZoomInImgID)+".jpg";
+
+}
+function nextImage(){
+    var ZoomInImg = document.getElementById("zoomInImg");
+    var ZoomInImgID = parseInt(document.getElementById("zoomInImg").getAttribute("data-imageID"));
+
+    if (ZoomInImgID==21){
+        newZoomInImgID=1;
+    }else{
+        newZoomInImgID = ZoomInImgID+1;
+    }
+    document.getElementById("zoomInImg").setAttribute("data-imageID", newZoomInImgID); 
+    ZoomInImg.src="./photos/"+(newZoomInImgID)+".jpg";
+}
+
+document.addEventListener('keydown', e =>{
+    if (e.key == "ArrowLeft"){
+        previousImage();
+    }else if(e.key == "ArrowRight"){
+        nextImage();
+    }
+})
