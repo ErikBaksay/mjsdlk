@@ -117,14 +117,14 @@
         padding: 1%;
     }
     #zoomIn img{
-        width: 60vw;
+        width: 80vw;
         height: fit-content;
     }
     #leftArrow{  
-        left:15%;
+        left:13%;
     }
     #rightArrow{
-        right: 15%;
+        right: 13%;
     }
 }
 @media only screen and (max-height: 550px) and (min-width: 440px){
