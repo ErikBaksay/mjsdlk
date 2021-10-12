@@ -136,10 +136,10 @@ html,body{
     user-select: none;
 }
 .slideAway{
-    animation: slideAway 0.5s ease-in forwards;
+    animation: slideAway 0.4s ease-in forwards;
 }
 .slideIn{
-    animation: slideIn 0.5s ease-in forwards;
+    animation: slideIn 0.4s ease-in forwards;
 }
 
 @keyframes slideAway{
@@ -228,7 +228,7 @@ html,body{
     }
     
 }
-@media only screen and (max-height: 550px){
+@media only screen and (max-height: 550px) and (min-width: 440px){
     #container{
         grid-template-rows: 0.12fr 1fr 0.16fr;
         grid-template-areas: "title"
@@ -257,5 +257,18 @@ html,body{
                             "space3 image title space2"
                             "space3 image arrow space2"
                             "space3 space5 space5 space2";
+    }
+    #menuDIV{
+        width: 80%;
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-height: 450px) and (max-width: 440px){
+    #contentDomovTitle{
+        font-size: 2.5em;
+    }
+    #menuDIV{
+        width: 80%;
+        font-size: 0.8em;
     }
 }

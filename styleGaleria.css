@@ -121,5 +121,8 @@
         height: fit-content;
     }
 }
-@media only screen and (max-height: 550px){
+@media only screen and (max-height: 550px) and (min-width: 440px){
+    #title{
+        font-size: 1em;
+    }
 }
