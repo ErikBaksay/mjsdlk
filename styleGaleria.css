@@ -120,6 +120,12 @@
         width: 60vw;
         height: fit-content;
     }
+    #leftArrow{  
+        left:15%;
+    }
+    #rightArrow{
+        right: 15%;
+    }
 }
 @media only screen and (max-height: 550px) and (min-width: 440px){
     #title{
